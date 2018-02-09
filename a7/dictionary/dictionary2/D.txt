@@ -1,0 +1,5 @@
+data
+database
+dealing
+design
+development

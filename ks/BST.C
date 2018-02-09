@@ -1,0 +1,82 @@
+#include <iostream>
+#include "???????"
+using namespace std;
+
+typedef int el_t;
+
+class Node
+{
+  friend class BST;
+private:
+  el_t elem;
+  Node* right;
+  Node* left;
+public:
+  Node(el_t e){elem = e; right = NULL; left = NULL;}
+};
+
+class BST
+{
+private:
+  Node* root;
+  void insertNode(Node*&, el_t);
+public:
+  BST();
+  void insertNode(el_t);
+  bool search(el_t e);
+};
+
+BST::BST()
+{
+  root = NULL;
+}
+
+void BST::insertNode(el_t e)
+{
+  insertNode(root, e);
+}
+
+void BST::insertNode(Node*& p, el_t e)
+{
+  if(p == NULL)
+    p = new Node(e);
+  else if(e < p->elem)
+    insertNode(p->left, e);
+  else
+    insertNode(p->right, e);
+}
+ 
+bool BST::search(el_t e)
+{
+
+
+??????????????????????
+
+
+
+
+
+}
+
+int main()
+{
+  srand(time(0));
+
+  ??????????????????
+
+  int key;
+  cout << "What number do you want to search for? ";
+  cin >> key;
+
+
+  cout << "BST *************************" << endl;
+ 
+  ??????????????????????????
+
+  cout << "LL************************" << endl;
+  
+  ??????????????????????????
+  
+
+  return 0;
+}
